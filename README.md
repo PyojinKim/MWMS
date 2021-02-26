@@ -2,7 +2,7 @@
 This repository provides supplementary materials and a MATLAB implementation of under-reviewed IEEE RA-L paper: "Quasi-globally Optimal and Efficient Visual Compass in Urban 3D Structured Environments" for the purpose of research and study only.
 Note that this repository only includes simplified proposed 3-DoF rotation estimation example codes to understand how the MWMS works in structured environments.
 
-![MWMS](https://github.com/PyojinKim/MWMS/blob/master/overview.png)
+![MWMS](https://github.com/PyojinKim/MWMS/blob/main/overview.png)
 
 
 # 1. Goal
@@ -11,7 +11,7 @@ The MWMS first detects and tracks the vertical dominant direction from an RGB-D 
 Once we find an initial rotation estimate of the camera, we refine the absolute camera orientation by minimizing the average orthogonal distance from the endpoints of the lines to the MW axes.
 Our method is not sensitive to noise and can achieve quasi-global optimality.
 
-![MWMS](https://github.com/PyojinKim/MWMS/blob/master/result.png)
+![MWMS](https://github.com/PyojinKim/MWMS/blob/main/result.png)
 
 
 # 2. Prerequisites
