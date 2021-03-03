@@ -1,5 +1,5 @@
 # Manhattan World Max Stabbing (MWMS)
-This repository provides supplementary materials and a MATLAB implementation of under-reviewed IEEE RA-L paper: "Quasi-globally Optimal and Efficient Visual Compass in Urban 3D Structured Environments" for the purpose of research and study only.
+This repository provides supplementary materials and a MATLAB implementation of the under-reviewed IEEE Robotics and Automation Letters (RA-L) with IROS 2021 paper: "Quasi-globally Optimal and Efficient Visual Compass in Urban 3D Structured Environments" for the purpose of research and study only.
 Note that this repository only includes simplified proposed 3-DoF rotation estimation example codes to understand how the MWMS works in structured environments.
 
 ![MWMS](https://github.com/PyojinKim/MWMS/blob/main/overview.png)
