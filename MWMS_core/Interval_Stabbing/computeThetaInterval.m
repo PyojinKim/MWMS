@@ -142,7 +142,8 @@ end
 theta_intervals = [];
 
 if size(final_thetas, 1)==2
-    midTheta = mean(final_thetas);
+    %midTheta = mean(final_thetas);
+    midTheta = (1/3) * final_thetas(1) + (2/3) * final_thetas(2);
     theta_test = midTheta;
     
     tan_t_test = tan(theta_test);
@@ -158,6 +159,27 @@ if size(final_thetas, 1)==2
         ( ...
         fenmu_test ...
         );
+    
+    
+    % check denominator (fenmu_test) stability
+    if (abs(fenmu_test) < 10^-15)
+        midTheta = mean(final_thetas);
+        theta_test = midTheta;
+        
+        tan_t_test = tan(theta_test);
+        items_test = [tan_t_test^4, tan_t_test^3, tan_t_test^2, tan_t_test, 1]';
+        fenzi_test = coeffs*items_test;
+        fenmu_test = mucoeffs*items_test;
+        
+        delta_mid_test = ...
+            -( ...
+            fenzi_test ...
+            ) ...
+            / ...
+            ( ...
+            fenmu_test ...
+            );
+    end
     
     if delta_mid_test>0 
         theta_intervals = [min(final_thetas), max(final_thetas)];

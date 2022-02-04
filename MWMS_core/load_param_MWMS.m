@@ -29,7 +29,7 @@ function [optsMWMS] = load_param_MWMS
 % line detection parameters
 optsMWMS.lineDetector = 'lsd';     % 'gpa'
 optsMWMS.lineDescriptor = 'lbd';
-optsMWMS.lineLength = 70;
+optsMWMS.lineLength = 100;
 
 
 % plane detection and tracking parameters

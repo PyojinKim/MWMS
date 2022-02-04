@@ -33,7 +33,7 @@ if (toVisualize)
     
     if (toSave)
         % save directory for MAT data
-        SaveDir = [datasetPath '/IROS2021'];
+        SaveDir = [datasetPath '/ICRA2022'];
         if (~exist( SaveDir, 'dir' ))
             mkdir(SaveDir);
         end

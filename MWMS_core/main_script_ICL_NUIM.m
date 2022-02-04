@@ -188,7 +188,7 @@ plot(RMD_MWMS); grid on; axis tight;
 title('RMD [deg]');
 
 
-%% save the experiment data for IROS 2021
+%% save the experiment data for ICRA 2022
 
 if (toSave)
     save([SaveDir '/MWMS.mat']);
